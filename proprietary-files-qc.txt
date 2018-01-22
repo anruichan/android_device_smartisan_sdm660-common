@@ -664,4 +664,3 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e47baed52f1c0637de34fa55e45a86b
 
 # Wi-Fi
 vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
