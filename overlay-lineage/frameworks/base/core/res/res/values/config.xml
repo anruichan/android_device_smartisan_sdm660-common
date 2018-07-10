@@ -31,4 +31,6 @@
          -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
+    <!-- Should the pinner service pin the Home application? -->
+    <bool name="config_pinnerHomeApp">true</bool>
 </resources>
