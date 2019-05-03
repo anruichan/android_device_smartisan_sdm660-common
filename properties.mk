@@ -1,6 +1,7 @@
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_gl_backpressure=1
+    debug.sf.enable_gl_backpressure=1 \
+    ro.surface_flinger.protected_contents=true
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
