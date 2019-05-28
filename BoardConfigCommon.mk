@@ -221,7 +221,7 @@ VENDOR_SECURITY_PATCH := 2019-10-10
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
