@@ -1,3 +1,7 @@
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_app_phase_offset_ns=1500000 \
