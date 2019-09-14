@@ -209,7 +209,6 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_smartisan
 
 # RIL
-TARGET_RIL_VARIANT := caf
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_LD_SHIM_LIBS += /system/lib/lib-imsvideocodec.so|/system/lib/libshim_ims.so
