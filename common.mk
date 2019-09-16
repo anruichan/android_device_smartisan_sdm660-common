@@ -245,6 +245,13 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0-java
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common_system
+
+PRODUCT_BOOT_JARS += \
+    ims-ext-common_system
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -352,7 +359,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.2 \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0 \
-    ims-ext-common \
     librmnetctl \
     libxml2 \
     libprotobuf-cpp-full
