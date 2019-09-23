@@ -265,7 +265,7 @@ vendor/lib64/hw/keystore.sdm660.so
 
 # Listen
 vendor/etc/audio.bsd
-vendor/lib/hw/sound_trigger.primary.sdm660.so
+vendor/lib/hw/sound_trigger.primary.sdm660.so|897448712ad94b004b803f01dfec859a5ab50e31
 vendor/lib/libadpcmdec.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
