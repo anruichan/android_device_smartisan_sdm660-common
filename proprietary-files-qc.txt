@@ -391,7 +391,6 @@ vendor/lib/libqcci_legacy.so
 vendor/lib/libqdi.so
 vendor/lib/libqdp.so
 vendor/lib/libqmi.so
-vendor/lib/libqmi_cci.so
 vendor/lib/libqmi_client_helper.so
 vendor/lib/libqmi_client_qmux.so
 vendor/lib/libqmi_common_so.so
@@ -406,7 +405,6 @@ vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
 vendor/lib64/libqmi.so
-vendor/lib64/libqmi_cci.so
 vendor/lib64/libqmi_client_helper.so
 vendor/lib64/libqmi_client_qmux.so
 vendor/lib64/libqmi_common_so.so
@@ -414,6 +412,10 @@ vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
+
+# QMI - from jasmine V11.0.28.0.QDIMIXM
+vendor/lib/libqmi_cci.so|b310d02f4e997a8867dc78bf5628db21ea61b7d4
+vendor/lib64/libqmi_cci.so|00d7bfe2ca99b9ec477235b39cb3b7b3bb501930
 
 # Radio
 -app/QtiSystemService/QtiSystemService.apk
