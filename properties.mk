@@ -15,6 +15,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.vidc.enc.disable.pq=true
+
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.vendor.shutdown.waittime=500 \
