@@ -191,8 +191,7 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libqdMetaData \
     libqdMetaData.system \
-    vendor.display.config@1.1 \
-    vendor.display.config@1.1_vendor
+    vendor.display.config@1.1
 
 # DPM
 PRODUCT_PACKAGES += \
