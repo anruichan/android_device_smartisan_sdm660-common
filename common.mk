@@ -171,13 +171,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
-# Connectivity Engine support (CNE)
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    libwpa_client \
-    services-ext
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service \
@@ -450,6 +443,7 @@ PRODUCT_PACKAGES += \
     libqsap_sdk \
     libQWiFiSoftApCfg \
     libwifi-hal-qcom \
+    libwpa_client \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
