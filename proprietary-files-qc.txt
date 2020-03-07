@@ -463,7 +463,7 @@ product/etc/permissions/telephony_product_privapp-permissions-qti.xml|0536410f98
 
 # Radio - IMS
 -app/imssettings/imssettings.apk
--app/uceShimService/uceShimService.apk|9921f96599cfa9c5ee85c1fdb14939f077c1fc75
+-app/uceShimService/uceShimService.apk|c3d1dc234b352e67cc516748514e8f32e5d9f6b9
 -priv-app/ims/ims.apk|f04bbd8657c762d29572b643bed90b66d4921e87
 etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
