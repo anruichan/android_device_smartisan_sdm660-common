@@ -124,18 +124,10 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 TARGET_LD_SHIM_LIBS += /vendor/lib/hw/camera.sdm660.so|/vendor/lib/libshim_camera_sdm660.so
 TARGET_LD_SHIM_LIBS += /vendor/lib/libmmcamera_ppeiscore.so|/vendor/lib/libshim_camera.so
 
-# Charger
-WITH_LINEAGE_CHARGER := false
-
-# CNE and DPM
-BOARD_USES_QCNE := true
-
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
 # Display
-MAX_EGL_CACHE_KEY_SIZE := 12*1024
-MAX_EGL_CACHE_SIZE := 2048*1024
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 TARGET_SCREEN_DENSITY := 400
@@ -147,7 +139,6 @@ TARGET_USES_NEW_ION_API :=true
 TARGET_USES_OVERLAY := true
 TARGET_USES_COLOR_METADATA := true
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
-USE_OPENGL_RENDERER := true
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
