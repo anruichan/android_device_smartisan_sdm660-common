@@ -247,6 +247,10 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0-java
 
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder
+
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common_system
