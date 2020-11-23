@@ -150,11 +150,9 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.a2dp@1.0-impl \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
-    bt-mac-generator \
-    libbthost_if
+    bt-mac-generator
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -162,7 +160,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     camera.sdm660 \
-    libmm-qcamera \
     libshim_camera \
     libshim_camera_sdm660 \
     android.frameworks.displayservice@1.0_32 \
@@ -187,13 +184,11 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    copybit.sdm660 \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
     memtrack.sdm660 \
     libdisplayconfig \
     libhwc2on1adapter \
-    libgenlock \
     libtinyxml \
     libqdMetaData \
     libqdMetaData.system \
@@ -346,7 +341,6 @@ PRODUCT_PACKAGES += \
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
-    libextmedia_jni \
     libhypv_intercept \
     libOmxAacEnc \
     libOmxAmrEnc \
@@ -433,8 +427,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
     hostapd_cli \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwifi-hal-qcom \
     libwpa_client \
     WifiOverlay \
