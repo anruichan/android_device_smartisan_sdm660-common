@@ -406,7 +406,7 @@ vendor/lib/libril-qc-qmi-1.so
 vendor/lib/libril-qc-radioconfig.so
 vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/librilqmiservices.so
-vendor/lib/libsettings.so
+vendor/lib/libsettings.so|c4e48d0c302324fac64878f2c63b56696dcc0551
 vendor/lib/libsubsystem_control.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/vendor.qti.hardware.radio.am@1.0.so
