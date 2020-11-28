@@ -64,6 +64,9 @@ function blob_fixup() {
     product/lib64/libdpmframework.so)
         "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
         ;;
+    vendor/lib64/libwvhidl.so)
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
+        ;;
     esac
 }
 
