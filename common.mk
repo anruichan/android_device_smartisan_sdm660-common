@@ -255,6 +255,7 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
     ims-ext-common_system
 
 PRODUCT_BOOT_JARS += \
