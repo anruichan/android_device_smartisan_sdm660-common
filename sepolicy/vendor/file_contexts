@@ -4,3 +4,6 @@
 
 # Root files
 /persist(/.*)?                                  u:object_r:mnt_vendor_file:s0
+
+# Vulkan
+/(vendor|system/vendor)/lib(64)?/vulkan\.[a-z0-9]*\.so             u:object_r:same_process_hal_file:s0

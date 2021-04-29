@@ -229,8 +229,8 @@ vendor/lib64/libsdmextension.so|264c00a0920d291700b2948b9337037684986921
 vendor/lib64/libtinyxml2_1.so|ba981e332895a053a67fc54a8190365a3ad37f2d
 
 # Graphics (Vulkan) - from jasmine V11.0.28.0.QDIMIXM
-vendor/lib/hw/vulkan.sdm660.so|87d87b2520d3a8adec7a24f5999a27b291edaeba
-vendor/lib64/hw/vulkan.sdm660.so|ad3a5d92c6c13ba0c937dd1b83f371e804a57c4e
+vendor/lib/hw/vulkan.sdm660.so:vendor/lib/vulkan.sdm660.so|87d87b2520d3a8adec7a24f5999a27b291edaeba
+vendor/lib64/hw/vulkan.sdm660.so:vendor/lib64/vulkan.sdm660.so|ad3a5d92c6c13ba0c937dd1b83f371e804a57c4e
 
 # Keystore
 vendor/lib/hw/keystore.sdm660.so
