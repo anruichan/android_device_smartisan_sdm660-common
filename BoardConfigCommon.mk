@@ -208,8 +208,10 @@ TARGET_LD_SHIM_LIBS += /system/lib64/lib-imsvideocodec.so|/system/lib64/libshim_
 VENDOR_SECURITY_PATCH := 2019-10-10
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+#include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+#BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy-minimal
 
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true
