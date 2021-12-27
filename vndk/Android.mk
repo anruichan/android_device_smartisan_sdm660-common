@@ -9,8 +9,6 @@ ifndef BOARD_VNDK_VERSION
 # libs will be copied to vndk-sp directory.
 # However, some of those libs need FWK-ONLY libs, which must be listed here
 # manually.
-VNDK_SP_LIBRARIES := \
-    libdexfile_support \
 
 install_in_hw_dir := \
    android.hidl.memory@1.0-impl
@@ -68,5 +66,4 @@ include $(BUILD_PHONY_PACKAGE)
 
 install_in_hw_dir :=
 vndk_sp_dir :=
-
 endif
