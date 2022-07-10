@@ -214,9 +214,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.smartisan
 
-# PRODUCT_PACKAGES += \
-#     SmartisanPocketMode
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
