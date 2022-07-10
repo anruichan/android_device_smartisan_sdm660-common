@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.mokee.pocketmode;
+package org.lineageos.pocketmode;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -22,7 +22,7 @@ import android.content.Intent;
 import android.os.UserHandle;
 import android.util.Log;
 
-import static mokee.content.Intent.ACTION_INITIALIZE_MK_HARDWARE;
+import static lineageos.content.Intent.ACTION_INITIALIZE_LINEAGE_HARDWARE;
 
 public class Startup extends BroadcastReceiver {
 

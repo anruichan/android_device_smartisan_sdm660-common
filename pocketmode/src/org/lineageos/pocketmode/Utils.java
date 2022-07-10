@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package org.mokee.pocketmode;
+package org.lineageos.pocketmode;
 
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.hardware.fingerprint.FingerprintManager;
 
-import mokee.providers.MKSettings;
+import lineageos.providers.LineageSettings;
 
-import org.mokee.internal.util.FileUtils;
+import org.lineageos.internal.util.FileUtils;
 
-import static org.mokee.platform.internal.R.bool.config_proximityCheckOnWake;
-import static org.mokee.platform.internal.R.bool.config_proximityCheckOnWakeEnabledByDefault;
+import static org.lineageos.platform.internal.R.bool.config_proximityCheckOnWake;
+import static org.lineageos.platform.internal.R.bool.config_proximityCheckOnWakeEnabledByDefault;
 
 class Utils {
 
