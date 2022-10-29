@@ -397,10 +397,6 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
-# TextClassifier smart selection model files
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
-
 # Trust
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
