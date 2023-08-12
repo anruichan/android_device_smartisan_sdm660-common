@@ -98,6 +98,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Verified Boot
+$(call inherit-product, $(LOCAL_PATH)/verity.mk)
+
 # Haters gonna hate..
 PRODUCT_CHARACTERISTICS := nosdcard
 
