@@ -204,9 +204,10 @@ TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_SUPPRESS_EMMC_WIPE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/root/recovery.fstab
-BOARD_SUPPRESS_EMMC_WIPE := true
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_smartisan
 
 # RIL
 TARGET_RIL_VARIANT := caf
@@ -214,10 +215,6 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_LD_SHIM_LIBS += /system/lib/lib-imsvideocodec.so|/system/lib/libshim_ims.so
 TARGET_LD_SHIM_LIBS += /system/lib64/lib-imsvideocodec.so|/system/lib64/libshim_ims.so
-
-# Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_smartisan
-TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-10-10
