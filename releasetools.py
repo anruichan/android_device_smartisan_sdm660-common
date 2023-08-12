@@ -23,16 +23,8 @@ def FullOTA_InstallBegin(info):
   KillMagisk(info)
   return
 
-def FullOTA_InstallEnd(info):
-  AddDeunifyScript(info)
-  return
-
 def IncrementalOTA_Assertions(info):
   AddModemAssertion(info)
-  return
-
-def IncrementalOTA_InstallEnd(info):
-  AddDeunifyScript(info)
   return
 
 def AddModemAssertion(info):
@@ -48,9 +40,4 @@ def AddModemAssertion(info):
 def KillMagisk(info):
   info.script.Mount("/system")
   info.script.AppendExtra('delete("/system/system/addon.d/99-magisk.sh");')
-  info.script.Unmount("/system")
-
-def AddDeunifyScript(info):
-  info.script.Mount("/system")
-  info.script.AppendExtra('run_program("/tmp/install/bin/deunify.sh");')
   info.script.Unmount("/system")
