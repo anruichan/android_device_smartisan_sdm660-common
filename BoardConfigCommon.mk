@@ -218,6 +218,8 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_smartisan
 TARGET_RIL_VARIANT := caf
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 ENABLE_VENDOR_RIL_SERVICE := true
+TARGET_LD_SHIM_LIBS += /system/lib/lib-imsvideocodec.so|/system/lib/libshim_ims.so
+TARGET_LD_SHIM_LIBS += /system/lib64/lib-imsvideocodec.so|/system/lib64/libshim_ims.so
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-10-10
