@@ -24,7 +24,15 @@ vendor.gralloc.enable_fb_ubwc=1
 dalvik.vm.heapsize=36m
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
-debug.sf.recomputecrop=0
+#Disable Skip Validate
+sdm.debug.disable_skip_validate=1
+
+#Property to enable display default color mode
+vendor.display.enable_default_color_mode=1
+
+# Display Properties as per treble compliance
+vendor.gralloc.enable_fb_ubwc=1
+vendor.display.disable_skip_validate=1
 
 # Audio
 af.fast_track_multiplier=1
@@ -62,6 +70,7 @@ fm.a2dp.conc.disabled=true
 audio.noisy.broadcast.delay=600
 persist.audio.hifi.int_codec=true
 audio.offload.pstimeout.secs=3
+ro.af.client_heap_size_kbyte=7168
 
 #ro.hdmi.enable=true
 #
@@ -82,6 +91,9 @@ mm.enable.smoothstreaming=true
 vendor.mm.enable.qcom_parser=13631487
 persist.mm.enable.prefetch=true
 persist.media.treble_omx=false
+
+#prefer HW codec over SW for thumbnail
+media.stagefright.thumbnail.prefer_hw_codecs=true
 
 #property to enable narrow search range for video encoding
 vidc.enc.target_support_bframe=1
@@ -105,7 +117,6 @@ mm.enable.qcom_parser=1048559
 # system props for the data modules
 #
 ro.vendor.use_data_netmgrd=true
-persist.data.netmgrd.qos.enable=true
 persist.vendor.data.mode=concurrent
 #system props for time-services
 persist.timed.enable=true
@@ -154,19 +165,7 @@ ro.vendor.bluetooth.emb_wp_mode=true
 ro.vendor.bluetooth.wipower=true
 ro.vendor.bt.bdaddr_path=/persist/bd_addr.txt
 
-#
-#snapdragon value add features
-#
-
 #system prop for RmNet Data
-persist.rmnet.data.enable=true
-persist.data.wda.enable=true
-persist.data.df.dl_mode=5
-persist.data.df.ul_mode=5
-persist.data.df.agg.dl_pkt=10
-persist.data.df.agg.dl_size=4096
-persist.data.df.mux_count=8
-persist.data.df.iwlan_mux=9
 persist.data.df.dev_name=rmnet_usb0
 
 #
@@ -186,13 +185,6 @@ persist.sys.wfd.virtual=0
 # system prop for NFC DT
 ro.nfc.port=I2C
 ro.hardware.nfc_nci=nqx.default
-
-#property for vendor specific library
-ro.vendor.at_library=libqti-at.so
-
-#min/max cpu in core control
-ro.vendor.qti.core_ctl_min_cpu=2
-ro.vendor.qti.core_ctl_max_cpu=4
 
 #hwui properties
 ro.hwui.texture_cache_size=72
@@ -216,9 +208,6 @@ persist.vendor.radio.atfwd.start=true
 #property to enable VDS WFD solution
 persist.hwc.enable_vds=1
 
-#Increase cached app limit
-ro.vendor.qti.sys.fw.bg_apps_limit=60
-
 #Settings to enable sensors
 #Device Orientation sensor
 ro.vendor.sensors.dev_ori=true
@@ -230,22 +219,27 @@ ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
 
 #Expose aux camera for below packages
-camera.aux.packagelist=org.codeaurora.snapcam
+vendor.camera.aux.packagelist=org.codeaurora.snapcam
+
+#Whitelisting the below packages
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam
+persist.camera.privapp.list=org.codeaurora.snapcam
 
 #disable UBWC for camera
-persist.camera.preview.ubwc=0
+persist.vendor.camera.preview.ubwc=0
 
 #Enable HAL3
 persist.camera.HAL3.enabled=1
 
-# Create zram disk
-ro.vendor.qti.config.zram=true
 
 #set maximum supported adapter voltage
 persist.chg.max_volt_mv=9000
 
-#Property to enable display default color mode
-vendor.display.enable_default_color_mode=1
+#system prop for Bluetooth SOC type
+vendor.bluetooth.soc=cherokee
+ro.bluetooth.library_name=libbluetooth_qti.so
+persist.vendor.btstack.enable.splita2dp=true
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac
 
 # Property for backup NTP Server
 persist.backup.ntpServer="0.pool.ntp.org"
