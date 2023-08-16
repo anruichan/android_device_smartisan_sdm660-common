@@ -3,11 +3,11 @@ bin/adsprpcd:vendor/bin/adsprpcd
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsp_hvx_callback_skel.so
 vendor/lib/libadsp_hvx_stub.so
-vendor/lib/libadsprpc.so
+vendor/lib/libadsprpc.so|a23a7efc3445b51b55a8af49f0f1117753ebac49
 vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
 vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
+vendor/lib64/libadsprpc.so|9b652433cc11e6ac0e3e9cd2a782714df306c423
 vendor/lib64/libfastcvadsp_stub.so
 vendor/lib64/libfastcvopt.so
 

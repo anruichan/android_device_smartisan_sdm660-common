@@ -240,6 +240,10 @@ vendor/lib64/librs_adreno.so|c84431c31efd21b30d95ebe9ea3dc4792f0de4ac
 vendor/lib64/librs_adreno_sha1.so|06535b728885e2bf161b1cca48e8e5928925310a
 vendor/lib64/libRSDriver_adreno.so|d6d85a5af4f82e3a64bda4929ab4ed8bde6b7a3d
 
+# Graphics - from platina 8.12.24
+vendor/lib/libOpenCL-v28.so|fbf2d8e82973ea44583f1ca6a624163759167a73
+vendor/lib64/libOpenCL-v28.so|1e78c9b98378803703835a3e1cbfabf43318f341
+
 # Graphics (HDR) - from jasmine V11.0.28.0.QDIMIXM
 vendor/lib/libhdr_tm.so|8d253c28c1fd976ac009088e36d483c16566f9a5
 vendor/lib64/libhdr_tm.so|1e74de5b505c8f742f1fb0379725ec9f5fd53282
