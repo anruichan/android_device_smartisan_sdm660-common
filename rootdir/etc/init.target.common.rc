@@ -2,25 +2,6 @@ on post-fs-data
     # Create folder for mm-qcamera-daemon
     mkdir /data/misc/camera/raw/ 0770 camera camera
 
-on boot
-    # Fingerprint
-    chmod 0644 /dev/goodix_fp
-    chown system system /dev/goodix_fp
-    chmod 0644 /sys/bus/platform/devices/soc:fpc1020/wakeup_enable
-    chown system system /sys/bus/platform/devices/soc:fpc1020/wakeup_enable
-    chmod 0644 /sys/bus/platform/devices/soc:fpc1020/hw_reset
-    chown system system /sys/bus/platform/devices/soc:fpc1020/hw_reset
-    chmod 0644 /sys/bus/platform/devices/soc:fpc1020/irq
-    chown system system /sys/bus/platform/devices/soc:fpc1020/irq
-    chmod 0644 /sys/bus/platform/devices/soc:fpc1020/regulator_enable
-    chown system system /sys/bus/platform/devices/soc:fpc1020/regulator_enable
-    chmod 0644 /sys/bus/platform/devices/soc:fpc1020/device_prepare
-    chown system system /sys/bus/platform/devices/soc:fpc1020/device_prepare
-    chmod 0644 /sys/bus/platform/devices/soc:fpc1020/clk_enable
-    chown system system /sys/bus/platform/devices/soc:fpc1020/clk_enable
-    chmod 0644 /sys/bus/platform/devices/soc:fpc1020/pinctl_set
-    chown system system /sys/bus/platform/devices/soc:fpc1020/pinctl_set
-
     # Keypad
     chown system system /proc/keypad/volume_up
     chown system system /proc/keypad/volume_down
