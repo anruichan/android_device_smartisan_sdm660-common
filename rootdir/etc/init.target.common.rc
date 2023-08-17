@@ -6,7 +6,7 @@ on post-fs-data
     chown system system /proc/keypad/volume_up
     chown system system /proc/keypad/volume_down
     chown system system /proc/keypad/power
-    chown system system /proc/keypad/shortcuts
+    chown system system /proc/keypad/smart
 
 service ifaad /system/bin/ifaad
     class late_start
