@@ -27,8 +27,6 @@
 #
 #
 
-on early-init
-
 on init
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
     write /dev/stune/top-app/schedtune.sched_boost_no_override 1
@@ -65,6 +63,7 @@ on fs
 
 on post-fs
     start vendor.qseecomd
+    exec - system system -- /vendor/bin/init.qti.qseecomd.sh
     write /dev/ipa 1
 
 on init
@@ -76,7 +75,6 @@ on post-fs-data
     mkdir /data/tombstones/wcnss 0771 system system
     mkdir /data/tombstones/dsps 0771 system system
     mkdir /data/vendor/hbtp 0750 system system
-    mkdir /data/vendor/tloc 0700 system drmrpc
 
     # Generate BT address
     mkdir /data/vendor/mac_addr 0771 bluetooth bluetooth
@@ -90,7 +88,6 @@ on boot
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
     write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/audio-app/cpus 1-2
     write /dev/cpuset/foreground/cpus 0-7
     write /dev/cpuset/foreground/boost/cpus 0-7
     write /dev/cpuset/background/cpus 0-7
@@ -116,11 +113,15 @@ on boot
 #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
 
+#Load WLAN driver
+   insmod /vendor/lib/modules/qca_cld3_wlan.ko
+
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "rndis_bam"
     setprop vendor.usb.rmnet.func.name "rmnet_bam"
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
+    setprop vendor.usb.qdss.inst.name "qdss"
     write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
     setprop sys.usb.configfs 1
 
@@ -153,7 +154,6 @@ on property:sys.boot_completed=1
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
-    stop vendor.ims_rtp_daemon
 
 #start camera server as daemon
 #service qcamerasvr /system/bin/mm-qcamera-daemon
@@ -192,10 +192,6 @@ service vendor.qseecomd /vendor/bin/qseecomd
    user root
    group root
 
-#service mpdecision /system/vendor/bin/mpdecision --avg_comp
-#   user root
-#   disabled
-#
 #service qosmgrd /system/bin/qosmgr /system/etc/qosmgr_rules.xml
 #   user system
 #   group system
@@ -466,18 +462,9 @@ service seempd /system/bin/seempd
     group system sdcard_rw
     socket seempdw dgram 0666 system system
 
-service vendor.tlocd /vendor/bin/tloc_daemon
-    class late_start
-    user system
-    group drmrpc gps net_raw
-
 service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
      class main
      user root
      group system wakelock
 
-service smcinvoked /system/bin/smcinvoked
-   class main
-   user system
-   group system
 
