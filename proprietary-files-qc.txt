@@ -275,14 +275,6 @@ vendor/lib/libnwa.so
 vendor/lib/libsmwrapper.so
 vendor/lib/libsse.so
 
-# Keymaster
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-
 # Media
 -vendor/lib/libgpustats.so
 -vendor/lib64/libgpustats.so
