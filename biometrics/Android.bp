@@ -1,0 +1,17 @@
+cc_binary {
+    name: "android.hardware.biometrics.fingerprint@2.1-service.smartisan",
+    relative_install_path: "hw",
+    defaults: ["hidl_defaults"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.smartisan.rc"],
+    srcs: ["service.cpp", "BiometricsFingerprint.cpp"],
+    cflags: ["-DSMARTISAN_HACK"],
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libhidlbase",
+        "libhardware",
+        "libutils",
+        "android.hardware.biometrics.fingerprint@2.1",
+    ],
+    proprietary: true,
+}

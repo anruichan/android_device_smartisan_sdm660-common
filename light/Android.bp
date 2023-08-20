@@ -1,0 +1,15 @@
+cc_binary {
+    name: "android.hardware.light@2.0-service.smartisan",
+    relative_install_path: "hw",
+    init_rc: ["android.hardware.light@2.0-service.smartisan.rc"],
+    srcs: ["service.cpp", "Light.cpp"],
+    shared_libs: [
+        "libbase",
+        "libcutils",
+        "libhardware",
+        "libhidlbase",
+        "libutils",
+        "android.hardware.light@2.0",
+    ],
+    proprietary: true,
+}
