@@ -137,7 +137,7 @@ service bt-mac-generator /vendor/bin/bt-mac-generator
     oneshot
     disabled
 
-service logic_volume /sbin/logic_volume -m striped -r 2:3 -c 256
+service logic_volume /bin/logic_volume -m striped -r 2:3 -c 256
     user root
     group root
     oneshot

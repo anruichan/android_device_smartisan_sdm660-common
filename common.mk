@@ -299,8 +299,8 @@ PRODUCT_PACKAGES += \
 
 # Logic volume
 PRODUCT_PACKAGES += \
-    dm-tool \
-    dm-tool.recovery \
+    dm-tools \
+    dm-tools.recovery \
     logic_volume \
     logic_volume.recovery
 
