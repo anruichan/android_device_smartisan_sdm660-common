@@ -35,8 +35,8 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 
-# Charger
-vendor/bin/hvdcp_opti
+# Charger - from jasmine V11.0.28.0.QDIMIXM
+vendor/bin/hvdcp_opti|120837d6d44abfd86515731dd26183be9cdd5596
 
 # CNE - from jasmine V11.0.28.0.QDIMIXM
 etc/cne/Nexus/ATT/ATT_profiles.xml|33e568627fd3f94dc45bca1c01ad10e6d8fb5b52
