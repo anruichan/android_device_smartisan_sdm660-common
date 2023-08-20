@@ -298,7 +298,9 @@ PRODUCT_PACKAGES += \
 # Logic volume
 PRODUCT_PACKAGES += \
     dm-tool \
-    logic_volume
+    dm-tool.recovery \
+    logic_volume \
+    logic_volume.recovery
 
 # Low power Whitelist
 PRODUCT_COPY_FILES += \
