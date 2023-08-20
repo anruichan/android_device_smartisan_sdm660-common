@@ -1036,8 +1036,8 @@ on property:init.svc.surfaceflinger=restarting
 #on property:ro.logdumpd.enabled=1
 #    start logdumpd
 
-on property:vendor.display.lcd_density=*
-    setprop ro.sf.lcd_density ${vendor.display.lcd_density}
+#on property:vendor.display.lcd_density=*
+#    setprop ro.sf.lcd_density ${vendor.display.lcd_density}
 
 # Set vendor-ril lib path based on Meta version
 on property:vendor.rild.libpath=*
