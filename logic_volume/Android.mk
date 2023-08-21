@@ -22,7 +22,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE       := dm-tools.recovery
 LOCAL_MODULE_STEM  := dm-tools
 LOCAL_MODULE_OWNER := smartisan
-LOCAL_MODULE_PATH  := $(TARGET_RECOVERY_ROOT_OUT)/bin
+LOCAL_MODULE_PATH  := $(TARGET_RECOVERY_ROOT_OUT)/system/bin
 LOCAL_SRC_FILES    := bin/dm-tools
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
@@ -32,7 +32,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE       := logic_volume.recovery
 LOCAL_MODULE_STEM  := logic_volume
 LOCAL_MODULE_OWNER := smartisan
-LOCAL_MODULE_PATH  := $(TARGET_RECOVERY_ROOT_OUT)/bin
+LOCAL_MODULE_PATH  := $(TARGET_RECOVERY_ROOT_OUT)/system/bin
 LOCAL_SRC_FILES    := bin/logic_volume
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
