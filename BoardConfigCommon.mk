@@ -189,7 +189,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
-TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop
+TARGET_SYSTEM_PROP := \
+    $(COMMON_PATH)/system.prop \
+    $(COMMON_PATH)/system_oem.prop \
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
