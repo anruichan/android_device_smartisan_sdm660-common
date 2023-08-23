@@ -123,6 +123,9 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 TARGET_LD_SHIM_LIBS += /vendor/lib/hw/camera.sdm660.so|/vendor/lib/libshim_camera_sdm660.so
 TARGET_LD_SHIM_LIBS += /vendor/lib/libmmcamera_ppeiscore.so|/vendor/lib/libshim_camera.so
 
+# Crypto
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Display
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
