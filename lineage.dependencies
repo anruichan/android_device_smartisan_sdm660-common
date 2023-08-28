@@ -1,5 +1,9 @@
 [
   {
+    "repository": "android_hardware_smartisan",
+    "target_path": "hardware/smartisan"
+  },
+  {
     "repository": "android_vendor_smartisan_sdm660-common",
     "target_path": "vendor/smartisan/sdm660-common"
   },
