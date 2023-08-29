@@ -419,7 +419,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
+    vendor.qti.hardware.vibrator.service.smartisan
 
 # VNDK
 PRODUCT_COPY_FILES += \
