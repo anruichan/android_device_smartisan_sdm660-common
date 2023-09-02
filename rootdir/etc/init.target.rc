@@ -158,10 +158,6 @@ service vendor.per_proxy /system/vendor/bin/pm-proxy
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
 
-on property:sys.boot_completed=1
-    # Set BFQ I/O scheduler
-    setprop sys.io.scheduler "bfq"
-
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
 
